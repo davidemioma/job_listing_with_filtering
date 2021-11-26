@@ -1,0 +1,38 @@
+@media (min-width: 1024px) {
+  .conntainer {
+    width: 90%;
+  }
+
+  .top {
+    background-image: url(../images/bg-header-desktop.svg);
+  }
+
+  .job {
+    grid-template-columns: 15% 30% 55%;
+    align-items: center;
+
+    .job_filters {
+      justify-self: end;
+    }
+
+    .job_logo {
+      transform: translate(0);
+      position: relative;
+      width: 100px;
+      height: 100px;
+      align-self: center;
+    }
+
+    .job-top {
+      border: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .conntainer {
+    width: 80%;
+  }
+}

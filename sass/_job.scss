@@ -1,0 +1,99 @@
+.jobs {
+  width: 100%;
+  display: grid;
+  gap: 5rem;
+  margin-top: 5rem;
+
+  .job {
+    display: grid;
+    background: #fff;
+    border-radius: 10px;
+    border-left: 5px solid $desaturated-dark-cyan;
+    padding: 3rem 2rem;
+    position: relative;
+
+    &-top {
+      border-bottom: 1px solid $very-dark-greyish-cyan;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &_filters {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
+
+      span {
+        background: $background;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 1.8rem;
+        color: $desaturated-dark-cyan;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .languages,
+      .tools {
+        display: flex;
+        gap: 1.5rem;
+      }
+    }
+
+    .position {
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+      margin-bottom: 1rem;
+    }
+
+    .position_info {
+      display: flex;
+      gap: 1rem;
+
+      p {
+        font-size: 1.8rem;
+        letter-spacing: 0.5px;
+        color: $dark-greyish-cyan;
+      }
+    }
+
+    &_logo {
+      width: 50px;
+      height: 50px;
+      transform: translate(10%, -50%);
+      position: absolute;
+      top: 0;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+
+      p {
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        color: $desaturated-dark-cyan;
+      }
+
+      span {
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 1.6rem;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      .new {
+        background: $desaturated-dark-cyan;
+      }
+
+      .featured {
+        background: $very-dark-greyish-cyan;
+      }
+    }
+  }
+}

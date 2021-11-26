@@ -1,0 +1,53 @@
+.form {
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+
+  .clear {
+    background: none;
+    border: 0;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $desaturated-dark-cyan;
+  }
+
+  .clear:hover {
+    transform: scale(1.1);
+  }
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+
+  .filter {
+    background-color: $background;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &-name {
+      color: $desaturated-dark-cyan;
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      padding: 1rem 1.5rem;
+    }
+
+    &-remove {
+      background-color: $desaturated-dark-cyan;
+      padding: 1.2rem;
+
+      img {
+        pointer-events: none;
+      }
+    }
+  }
+}

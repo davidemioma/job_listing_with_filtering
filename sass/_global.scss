@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+$desaturated-dark-cyan: hsl(180, 29%, 50%);
+$background: hsl(180, 52%, 96%);
+$filter-tablets: hsl(180, 31%, 95%);
+$dark-greyish-cyan: hsl(180, 8%, 52%);
+$very-dark-greyish-cyan: hsl(180, 14%, 20%);
